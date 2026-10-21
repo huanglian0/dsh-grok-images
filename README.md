@@ -57,6 +57,14 @@ GitHub 项目名为 DSH Grok Images；安装用的包名仍为 `dsh-plugin-grok-
 
 ## 安装到目标 profile
 
+先获取本项目源码：在仓库页面选择 Code → Download ZIP 并解压到固定目录，或执行：
+
+```powershell
+git clone https://github.com/huanglian0/dsh-grok-images.git
+```
+
+安装时选择包含 package.json、src 和 cordis.patch.yml 的插件目录。下面的本地路径均是占位示例，按你的保存位置替换。
+
 先确认 DSH 当前使用的是要安装插件的目标 profile。profile 是 DSH 的配置与依赖目录，不是程序安装目录，也不等同于数据目录；不要根据窗口名称猜测目录或把桌面 profile 当作普通 CLI profile。
 
 推荐在该 profile 的 DSH 中打开「Plugins／插件」→「Add plugin／添加插件」，输入本地插件目录的绝对路径，例如 `C:\Path\To\plugins\grok-imagine`。该目录应包含本插件的 `package.json`、`src` 和 `cordis.patch.yml`。第三方插件安装后可能仍处于关闭状态；完成下节的 profile 配置后，在插件页启用该 bundle（安装结果中的「Enable now／立即启用」也可启用）。启用操作会登记当前 profile 的 `dsh.profile.bundles`。
