@@ -1,0 +1,19 @@
+{
+  "name": "dsh-plugin-grok-imagine",
+  "version": "0.1.2",
+  "type": "module",
+  "license": "MIT",
+  "description": "Grok Imagine using the existing native xAI OAuth grant only; no API-key fallback or automatic generation.",
+  "keywords": ["deepseek-harness", "dsh-plugin", "grok", "xai", "image"],
+  "files": ["src", "cordis.patch.yml", "README.md", "LICENSE"],
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js", "./client": "./src/client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-ui-conversation", "@deepseek-ai/dsh-client-ui-attachment"],
+      "platform": "web"
+    }
+  },
+  "engines": { "node": ">=22", "dsh": ">=0.2.1-rc.2" }
+}
