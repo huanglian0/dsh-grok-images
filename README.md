@@ -2,6 +2,8 @@
 
 作者：lalala.gpt
 
+AI 协作：[OpenAI Codex](https://openai.com/codex/)（代码审阅、文档整理与开源发布）。
+
 复用 DSH 已有的 xAI 登录，在对话里完成 Grok 单张图片生成和编辑。
 
 这是 DSH Native Images 系列中的 Grok 图片插件：把图片能力作为独立工具接入 DeepSeek Harness，不新增聊天模型，也不需要另外填写 API Key。你可以继续使用自己的对话流程，在明确需要图片时调用它。
@@ -22,8 +24,6 @@
 需要使用现有 ChatGPT / Codex 登录，或直接展示已保存的本地图片时，可选择同系列的 [DSH Codex Images](https://github.com/lalala-git/dsh-codex-images)。
 
 ## 接入方式
-
-AI 协作：[OpenAI Codex](https://openai.com/codex/)（代码审阅、文档整理与开源发布）。
 
 出图通过 xAI 官方图片接口 `https://api.x.ai/v1` 使用 `grok-imagine-image-2.0`。本插件使用现有原生 xAI OAuth 登录，不使用 API Key；它依赖 DSH 的原生服务及 xAI 接口，相关接口变化可能导致插件失效。
 
