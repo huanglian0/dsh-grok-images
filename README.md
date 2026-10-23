@@ -23,6 +23,8 @@
 
 ## 接入方式
 
+AI 协作：[OpenAI Codex](https://openai.com/codex/)（代码审阅、文档整理与开源发布）。
+
 出图通过 xAI 官方图片接口 `https://api.x.ai/v1` 使用 `grok-imagine-image-2.0`。本插件使用现有原生 xAI OAuth 登录，不使用 API Key；它依赖 DSH 的原生服务及 xAI 接口，相关接口变化可能导致插件失效。
 
 GitHub 项目名为 DSH Grok Images；安装用的包名仍为 `dsh-plugin-grok-imagine`。
